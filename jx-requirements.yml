@@ -19,9 +19,11 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
+    domain: "$DOMAIN"
     externalDNS: false
     namespaceSubDomain: -jx.
+    customHosts:
+	   hook: "http://16ce-196-189-238-67.ngrok.io"
     tls:
       email: ""
       enabled: false
